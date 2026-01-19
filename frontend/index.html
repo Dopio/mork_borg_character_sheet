@@ -1,10 +1,39 @@
+<!-- frontend/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>MÖRK BORG - Character Sheet</title>
+    <link rel="stylesheet" href="css/morkborg.css">
 </head>
-<body>
-$END$
+<body class="morkborg-theme">
+    <div class="container">
+        <header>
+            <h1>⚔️ MÖRK BORG CHARACTER SHEET ⚔️</h1>
+            <p class="subtitle">Создай своего обречённого героя</p>
+        </header>
+
+        <main>
+            <div class="hero-section">
+                <button id="create-character" class="btn-create">
+                    СОЗДАТЬ НОВОГО ПЕРСОНАЖА
+                </button>
+
+                <div class="recent-characters">
+                    <h3>Последние персонажи:</h3>
+                    <div id="characters-list">
+                        <!-- Загрузится через JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>MÖRK BORG © | Лист персонажа v1.0</p>
+        </footer>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
